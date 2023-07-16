@@ -1,6 +1,6 @@
 # Term Database
 
-This repository contains a database of over 10k search terms across different topics.
+This repository contains a database of over 10k(10,134) search terms across different topics.
 
 ## Structure
 
