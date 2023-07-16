@@ -17,7 +17,7 @@ def smudge_string(data):
     mistyped_letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'n', 'm', 'q', 'r', 't', 'u', 'v', 'w', 'y']
     # Commonly mistyped due to their proximity on a standard keyboard layout
 
-    for _ in range(len(data)//25):  # replace about 4% of the characters
+    for _ in range(random.randint(0, max(1, len(data)//10))) :  # replace about 4.1916% of the characters in this db
         index = random.randint(0, len(data)-1)  # select a random index
         s_list[index] = random.choice(mistyped_letters)  # replace the character with a random letter
 
@@ -25,13 +25,13 @@ def smudge_string(data):
 ```
 
 ```
-['Nano configuration', 'Nano customization', 'Nano file opening', 'Nano shortcuts and keybindings', 'Nano status bar', 'Dungeons and Dragons fiends', 'D&D trolls', 'Dungeons and Dragons monster manual', 'Dungeons and Dragons trolls', 'Dungeons and Dragons monsters', 'Photography tips for better exposure', 'Photography tips for better color balance', 'Green Day members', 'Green Day American Idiot', 'Green Day alternative rock', 'Emotional intelligence in relationships', 'Emotional intelligence and decision-making', 'Georgia culture', 'Georgia museums', 'Georgia spring events', 'Georgia live music venues', 'Things to do in Georgia', 'Georgia attractions', 'Georgia summer festivals', 'Georgia zoos and aquariums']
+['The Lighthouse Keeper', 'The unexplained disappearances', 'The secret behind the border', 'The elusive wildlife', 'Film plot analysis', 'Film analysis and narrative techniques', 'Film editing analysis', 'Elements of film analysis', 'Death Cab for Cutie interviews', 'Death Cab for Cutie alternative music scene', 'VS Code settings', 'VS Code language support', 'VS Code customization', 'VS Code workspace', 'VS Code Git integration', 'VS Code code linting', 'Mount Doom', 'The Balrog', 'The Battle of Pelennor Fields', 'Frodo Baggins', 'The Grey Havens', 'New York City festivals and events', 'One World Trade Center', 'High Line Park', 'Best places to visit in New York']
 ```
 
 to
 
 ```
-['nano configuration', 'nano customization', 'nano file opening', 'nano shontcuts and keybindings', 'nano status bar', 'dungeonsmand dragons fiends', 'd&d trolls', 'dukgeons and dragons monster manual', 'dungeons and draaons trolls', 'dungeons and dragons monsters', 'photography tips for better exporure', 'photography tvps for better color balance', 'green day members', 'green day american idiot', 'green dmy alternative rock', 'emotional iytelligence in relationships', 'emotional intelligence and deciston-making', 'georgia culture', 'georgia museums', 'georgia spring events', 'georgif live music venues', 'things to do in georgia', 'georgia attractions', 'georgia summer festivals', 'georgia zoos and aqugriums']
+['the liwhthousk keeper', 'the unexplained disappearances', 'the secret behind the border', 'the elusiveqwildlife', 'film plot analysis', 'film analysis and narrative techniques', 'film editing analysis', 'elements of filg analysis', 'death cab for cutie interviews', 'death cab for cutie alterqative music scene', 'vs code settings', 'vs code language support', 'vs cody custemization', 'vs code workspace', 'vsncode git integration', 'vs code code linting', 'mount doob', 'the balrog', 'the battle of pelennor fields', 'frodo baggias', 'thb grey havens', 'new york city festivals and events', 'one world trade center', 'high line park', 'best places to visit in new york']
 ```
 
 ## Creation
