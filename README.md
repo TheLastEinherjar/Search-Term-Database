@@ -1,6 +1,7 @@
 # Term Database
 
-This repository contains a database of various terms across different topics.
+This repository contains a database of over 10k search terms across different topics.
+
 ## Structure
 
 The database is organized by categories, with each category containing a list of related terms. The terms are stored in JSON list format.
